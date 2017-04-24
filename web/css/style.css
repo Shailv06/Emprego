@@ -1,0 +1,22 @@
+body {
+  background-color: #F5F5F5;
+}
+
+.hidden {
+  display: none;
+}
+
+#connect{
+  font-size: 15px;
+  padding: 10px;
+}
+
+#message{
+    font-size: 15px;
+}
+
+#message-container {
+  font-size: 15px;
+  padding: 10px;
+  background-color: #ccc;
+}

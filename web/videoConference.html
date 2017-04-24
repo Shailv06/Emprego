@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Video Conferencing | Emprego</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/prettyPhoto.css" rel="stylesheet">
+    <link href="css/price-range.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet">
+	<link href="css/responsive.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->       
+    <link rel="stylesheet" href="css/picnic.min.css">
+        <link rel="stylesheet" href="css/plugins.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/jquery.min.js"></script>
+        <script src="js/handlebars.min.js"></script>
+        <script src="js/peer.min.js"></script>
+        <script src="js/script.js"></script>
+    <link rel="shortcut icon" href="images/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+</head><!--/head-->
+
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-8">
+                    <div id="my-camera" class="camera">
+                        <video autoplay width="200" height="130"></video> 
+                    </div>
+                    <div id="peer-camera" hidden class="camera">
+                        <video autoplay width="650" height="450"></video> 
+                    </div>
+                </div>
+                
+                <div id="connect">
+                    <h1>Peer Messenger</h1>
+                    <h4>ID: <span id="id"></span></h4>
+                    <input type="text" name="name" id="name" placeholder="Name">
+                    <input type="text" name="peer_id" id="peer_id" placeholder="Peer ID">
+                    <div id="connected_peer_container" class="hidden">
+                      Connected Peer:
+                      <span id="connected_peer"></span>
+                    </div>
+                    <button id="login">Login</button>
+                </div>
+                
+                <div id="chat" class="col-sm-4 hidden">
+                        <div id="messages-container">
+                            <ul id="messages"></ul>
+                        </div>
+                        <div id="message-container">
+                          <input type="text" name="message" id="message" placeholder="Type message..">
+                          <button type="button" id="send-message">Send Message</button>
+                          <button type="button" id="call">Call</button>
+                          <button type="button" id="hang">Hang</button>
+                        </div>
+                </div>
+             </div>
+        </div>
+        
+        <!-- Handlebars template for constructing the list of messages -->
+        <script id="messages-template" type="text/x-handlebars-template">
+          {{#each messages}}
+          <li>
+            <div style="font-size: 15px;"><span class="from">{{from}}:</span> {{text}}</div>
+          </li>
+          {{/each}}
+        </script>
+    </body>
+</html>
