@@ -41,10 +41,10 @@ CREATE TABLE IF NOT EXISTS `company` (
 --
 
 INSERT INTO `company` (`companyID`, `orgNo`, `companyName`, `companyEmail`, `companyPassword`) VALUES
-(1, 12, 'Intersoftkk (India) Pvt. Ltd.', 'shailv06@gmail.com', '21'),
+(1, 12, 'Intersoftkk (India) Pvt. Ltd.', 'vshailendra2@gmail.com', '21'),
 (16, 54455, 'dg', 'dfg@gm.bb', '545'),
 (15, 32, 'Sachin Singh', 'sacsv@gmail.com', '2121'),
-(13, 123, 'dfghj', 'vshailendra2@gmail.com', 'dfghj'),
+(13, 123, 'dfghj', 'Shailv06@gmail.com', 'dfghj'),
 (14, 1234, 'dsf', 'as@fs.csd', '123');
 
 -- --------------------------------------------------------
