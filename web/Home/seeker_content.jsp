@@ -32,7 +32,7 @@
                             <div class="col-sm-12" style="margin-bottom: 25px">
                                 <div class="product-information "><!--/product-information-->
                                     <a href="home?action=jobDetail&jobId=<c:out value="${post.getId()}"/>" >
-                                        <h2><c:out value="${post.getDesignation()}"/>(<c:out value="${post.getExperience()}"/>)</h2>
+                                        <h2><c:out value="${post.getDesignation()}"/> (<c:out value="${post.getExperience()}"/>)</h2>
                                     </a>
                                     <p id="key-skills"><c:out value="${post.getCompanyName()}"/></p><hr>
                                     <p><b>Details:</b><c:out value="${fn:substring(post.getDetails(),0,180)}"/>... 
